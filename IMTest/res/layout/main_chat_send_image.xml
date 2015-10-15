@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chat_send_createDate_image"
+        style="@style/chat_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2012-09-01 18:30:21" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/chat_send_icon"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/chat_send_content_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/chat_send_icon"
+            android:background="@drawable/chat_send_msg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="50dp"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/chat_send_name_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="这不就是你吗"
+        android:textSize="18sp" />
+
+</LinearLayout>
