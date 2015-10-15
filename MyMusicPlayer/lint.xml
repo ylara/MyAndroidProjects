@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="MissingTranslation" severity="warning" />
+    <issue id="WorldReadableFiles">
+        <ignore path="src/com/kz/activity/MainActivity.java" />
+    </issue>
+</lint>
